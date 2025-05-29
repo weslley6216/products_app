@@ -21,6 +21,18 @@ services:
     env_file:
       - .env
     command: bash -c 'bin/setup && rails server -b 0.0.0.0 -p 3000'
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - 4000:4000
+    command: npm run dev -- --host
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
 volumes:
   rubygems:
   postgres:
