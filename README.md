@@ -64,19 +64,19 @@ Após rodar um `docker compose up`, abra uma nova instância no terminal e execu
 * **Executar testes RSpec (Product API):**
 
     ```bash
-    docker compose exec products_api rspec
+    docker compose exec backend rspec
     ```
 
 * **Abrir um shell Bash na API:**
 
     ```bash
-    docker compose exec products_api bash
+    docker compose exec backend bash
     ```
 
 * **Abrir um shell Sh no Frontend:**
 
     ```bash
-    docker compose exec product_frontend sh
+    docker compose exec frontend sh
     ```
 
 ---
