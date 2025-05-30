@@ -67,6 +67,12 @@ Após rodar um `docker compose up`, abra uma nova instância no terminal e execu
     docker compose exec backend rspec
     ```
 
+* **Executar testes Vitest (Frontend):**
+
+    ```bash
+    docker compose exec frontend yarn test
+    ```
+
 * **Abrir um shell Bash na API:**
 
     ```bash
