@@ -5,7 +5,7 @@ export const formatCurrency = new Intl.NumberFormat('pt-BR', {
 
 export const parsePrice = (price) => {
   if (typeof price === 'string' && price.trim() === '') {
-    return ''; // Retorna string vazia para campos de preço vazios
+    return '';
   }
   if (typeof price === 'number') {
     return price;
@@ -13,4 +13,3 @@ export const parsePrice = (price) => {
 
   return parseFloat(price) || 0;
 };
-
